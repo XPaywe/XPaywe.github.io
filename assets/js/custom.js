@@ -135,7 +135,7 @@ $(document).ready(function() {
 		dots: false,
 		infinite:true,
 		autoplay: true,
-		autoplaySpeed: 4000,
+		autoplaySpeed: 1500,
 		responsive: [
 		{
 		  breakpoint: 768,
@@ -155,7 +155,7 @@ $(document).ready(function() {
 		dots: false,
 		infinite:true,
 		autoplay: true,
-		autoplaySpeed: 4500,
+		autoplaySpeed: 1500,
 		responsive: [
 		{
 		  breakpoint: 768,
@@ -175,7 +175,7 @@ $(document).ready(function() {
 		dots: false,
 		infinite:true,
 		autoplay: true,
-		autoplaySpeed: 4500,
+		autoplaySpeed: 1500,
 		responsive: [
 		{
 		  breakpoint: 768,
