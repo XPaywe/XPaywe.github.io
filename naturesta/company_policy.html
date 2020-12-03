@@ -1,0 +1,512 @@
+<html>
+<head><meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<style type="text/css">
+<!--
+span.cls_004{font-family:"Verdana Bold",serif;font-size:12.1px;color:rgb(30,71,124);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_004{font-family:"Verdana Bold",serif;font-size:12.1px;color:rgb(30,71,124);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_030{font-family:"Verdana",serif;font-size:8.6px;color:rgb(0,0,255);font-weight:normal;font-style:normal;text-decoration: underline}
+div.cls_030{font-family:"Verdana",serif;font-size:8.6px;color:rgb(0,0,255);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_031{font-family:"Verdana",serif;font-size:8.6px;color:rgb(128,0,128);font-weight:normal;font-style:normal;text-decoration: underline}
+div.cls_031{font-family:"Verdana",serif;font-size:8.6px;color:rgb(128,0,128);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_008{font-family:"Verdana Bold",serif;font-size:10.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_008{font-family:"Verdana Bold",serif;font-size:10.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_009{font-family:"Verdana",serif;font-size:8.6px;color:rgb(30,71,124);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_009{font-family:"Verdana",serif;font-size:8.6px;color:rgb(30,71,124);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_010{font-family:Arial,serif;font-size:8.6px;color:rgb(30,71,124);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_010{font-family:Arial,serif;font-size:8.6px;color:rgb(30,71,124);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_011{font-family:Arial,serif;font-size:8.6px;color:rgb(30,71,124);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_011{font-family:Arial,serif;font-size:8.6px;color:rgb(30,71,124);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_032{font-family:"Verdana",serif;font-size:8.6px;color:rgb(30,71,124);font-weight:normal;font-style:normal;text-decoration: underline}
+div.cls_032{font-family:"Verdana",serif;font-size:8.6px;color:rgb(30,71,124);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_013{font-family:"Verdana Bold Italic",serif;font-size:8.6px;color:rgb(30,71,124);font-weight:bold;font-style:italic;text-decoration: none}
+div.cls_013{font-family:"Verdana Bold Italic",serif;font-size:8.6px;color:rgb(30,71,124);font-weight:bold;font-style:italic;text-decoration: none}
+span.cls_002{font-family:"Calibri",serif;font-size:8.0px;color:rgb(54,95,145);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_002{font-family:"Calibri",serif;font-size:8.0px;color:rgb(54,95,145);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_003{font-family:"Calibri Bold",serif;font-size:8.0px;color:rgb(54,95,145);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_003{font-family:"Calibri Bold",serif;font-size:8.0px;color:rgb(54,95,145);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_016{font-family:"Verdana Bold",serif;font-size:8.6px;color:rgb(30,71,124);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_016{font-family:"Verdana Bold",serif;font-size:8.6px;color:rgb(30,71,124);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_017{font-family:Times,serif;font-size:11.0px;color:rgb(255,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_017{font-family:Times,serif;font-size:11.0px;color:rgb(255,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_018{font-family:"Verdana Bold Italic",serif;font-size:8.6px;color:rgb(31,72,124);font-weight:bold;font-style:italic;text-decoration: none}
+div.cls_018{font-family:"Verdana Bold Italic",serif;font-size:8.6px;color:rgb(31,72,124);font-weight:bold;font-style:italic;text-decoration: none}
+span.cls_019{font-family:"Verdana",serif;font-size:8.6px;color:rgb(31,72,124);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_019{font-family:"Verdana",serif;font-size:8.6px;color:rgb(31,72,124);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_033{font-family:"Verdana Italic",serif;font-size:8.6px;color:rgb(0,0,255);font-weight:normal;font-style:italic;text-decoration: underline}
+div.cls_033{font-family:"Verdana Italic",serif;font-size:8.6px;color:rgb(0,0,255);font-weight:normal;font-style:italic;text-decoration: none}
+span.cls_024{font-family:Arial,serif;font-size:8.6px;color:rgb(31,72,124);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_024{font-family:Arial,serif;font-size:8.6px;color:rgb(31,72,124);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_026{font-family:"Verdana",serif;font-size:8.6px;color:rgb(54,95,145);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_026{font-family:"Verdana",serif;font-size:8.6px;color:rgb(54,95,145);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_034{font-family:"Calibri",serif;font-size:11.0px;color:rgb(54,95,145);font-weight:normal;font-style:normal;text-decoration: underline}
+div.cls_034{font-family:"Calibri",serif;font-size:11.0px;color:rgb(54,95,145);font-weight:normal;font-style:normal;text-decoration: none}
+-->
+</style>
+<script type="text/javascript" src="0b1cc12c-354b-11eb-8b25-0cc47a792c0a_id_0b1cc12c-354b-11eb-8b25-0cc47a792c0a_files/wz_jsgraphics.js"></script>
+</head>
+<body>
+<div style="position:absolute;left:50%;margin-left:-306px;top:0px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="0b1cc12c-354b-11eb-8b25-0cc47a792c0a_id_0b1cc12c-354b-11eb-8b25-0cc47a792c0a_files/background1.jpg" width=612 height=792></div>
+<div style="position:absolute;left:71.88px;top:67.74px" class="cls_004"><span class="cls_004">Company Policies and Procedures</span></div>
+<div style="position:absolute;left:71.88px;top:95.46px" class="cls_030"><span class="cls_030">Anthem Supplier Code of Conduct</span></div>
+<div style="position:absolute;left:71.88px;top:106.02px" class="cls_030"><span class="cls_030">Procurement Process Technology and Electronic Signatures</span></div>
+<div style="position:absolute;left:71.88px;top:116.34px" class="cls_031"><span class="cls_031">Supplier Reimbursable Expense Guidelines</span></div>
+<div style="position:absolute;left:71.88px;top:126.90px" class="cls_030"><span class="cls_030">Anthem Requirements for Supplier Onsite Personnel</span></div>
+<div style="position:absolute;left:71.88px;top:164.04px" class="cls_008"><span class="cls_008">Anthem Supplier Code of Conduct</span></div>
+<div style="position:absolute;left:71.88px;top:189.78px" class="cls_009"><span class="cls_009">Anthem’s success is built on a commitment to our core values and behaviors that include being:</span></div>
+<div style="position:absolute;left:94.37px;top:214.20px" class="cls_010"><span class="cls_010">•</span><span class="cls_011"> </span><span class="cls_009">Accountable</span></div>
+<div style="position:absolute;left:94.37px;top:224.75px" class="cls_010"><span class="cls_010">•</span><span class="cls_011"> </span><span class="cls_009">Caring</span></div>
+<div style="position:absolute;left:94.37px;top:235.25px" class="cls_010"><span class="cls_010">•</span><span class="cls_011"> </span><span class="cls_009">Easy to Do Business With</span></div>
+<div style="position:absolute;left:94.38px;top:245.63px" class="cls_010"><span class="cls_010">•</span><span class="cls_011"> </span><span class="cls_009">Innovative</span></div>
+<div style="position:absolute;left:94.39px;top:256.07px" class="cls_010"><span class="cls_010">•</span><span class="cls_011"> </span><span class="cls_009">Trustworthy</span></div>
+<div style="position:absolute;left:71.90px;top:280.78px" class="cls_009"><span class="cls_009">Our customers, stakeholders and regulators expect that we will conduct business with integrity and provide a</span></div>
+<div style="position:absolute;left:71.90px;top:291.34px" class="cls_009"><span class="cls_009">quality product. In turn, we expect the same of our Suppliers.</span></div>
+<div style="position:absolute;left:71.90px;top:315.70px" class="cls_009"><span class="cls_009">Anthem understands that our Suppliers are independent entities; however, the business practices of our</span></div>
+<div style="position:absolute;left:71.90px;top:326.19px" class="cls_009"><span class="cls_009">Suppliers may impact and/or reflect upon Anthem. It is for this reason that Anthem expects all Suppliers, their</span></div>
+<div style="position:absolute;left:71.89px;top:336.69px" class="cls_009"><span class="cls_009">employees, agents and subcontractors (hereinafter referred to collectively as “Supplier”) to adhere to the</span></div>
+<div style="position:absolute;left:71.89px;top:347.19px" class="cls_009"><span class="cls_009">Anthem Supplier Code of Conduct while conducting business with or on behalf of Anthem. The Anthem</span></div>
+<div style="position:absolute;left:71.88px;top:357.68px" class="cls_009"><span class="cls_009">Supplier Code of Conduct establishes minimum standards for conducting business with Anthem and to the</span></div>
+<div style="position:absolute;left:71.87px;top:368.18px" class="cls_009"><span class="cls_009">extent of any conflict between this Supplier Code of Conduct and any other transactional document entered</span></div>
+<div style="position:absolute;left:71.87px;top:378.68px" class="cls_009"><span class="cls_009">into by Anthem and Supplier, the latter shall control.</span></div>
+<div style="position:absolute;left:89.88px;top:403.44px" class="cls_009"><span class="cls_009">1. </span><span class="cls_032">WORKPLACE STANDARDS AND PRACTICES</span></div>
+<div style="position:absolute;left:89.88px;top:427.86px" class="cls_009"><span class="cls_009">Suppliers will operate their facilities and conduct employment practices in an ethical manner and meet the</span></div>
+<div style="position:absolute;left:89.88px;top:438.36px" class="cls_009"><span class="cls_009">requirements required by law in all locations in which they operate. This includes, but is not limited to,</span></div>
+<div style="position:absolute;left:89.88px;top:448.85px" class="cls_009"><span class="cls_009">laws and regulations relating to health and safety, labor, compensation, work hours, and the</span></div>
+<div style="position:absolute;left:89.88px;top:459.35px" class="cls_009"><span class="cls_009">environment. Following are Anthem-specific guidelines for some of these matters applicable to Supplier:</span></div>
+<div style="position:absolute;left:89.88px;top:483.89px" class="cls_013"><span class="cls_013">Alcohol and Drug-free Workplace</span></div>
+<div style="position:absolute;left:89.88px;top:494.38px" class="cls_009"><span class="cls_009">Anthem is committed to providing an alcohol and drug-free workplace, which helps facilitate a safe and</span></div>
+<div style="position:absolute;left:89.88px;top:504.82px" class="cls_009"><span class="cls_009">healthy work environment. Anthem complies with the Drug-free Workplace Act of 1988. Associates,</span></div>
+<div style="position:absolute;left:89.88px;top:515.26px" class="cls_009"><span class="cls_009">temporary employees, agents, contractors, Suppliers and visitors are prohibited from the unlawful</span></div>
+<div style="position:absolute;left:89.88px;top:525.70px" class="cls_009"><span class="cls_009">manufacture, distribution, dispensation, possession or use of alcohol, illegal drugs, and/or drug</span></div>
+<div style="position:absolute;left:89.88px;top:536.13px" class="cls_009"><span class="cls_009">paraphernalia on Anthem owned or leased property, or while representing Anthem at any time.</span></div>
+<div style="position:absolute;left:89.87px;top:560.67px" class="cls_013"><span class="cls_013">Health and Safety</span></div>
+<div style="position:absolute;left:89.87px;top:571.17px" class="cls_009"><span class="cls_009">Suppliers will provide a safe and healthy work environment in compliance with all applicable laws and</span></div>
+<div style="position:absolute;left:89.87px;top:581.60px" class="cls_009"><span class="cls_009">regulations.  Anthem  does  not  tolerate  acts  of  violence,  threats,  harassment,  intimidation  or  other</span></div>
+<div style="position:absolute;left:89.86px;top:592.04px" class="cls_009"><span class="cls_009">disruptive behavior in our workplace or during the course of providing services to Anthem, whether on</span></div>
+<div style="position:absolute;left:89.86px;top:602.48px" class="cls_009"><span class="cls_009">Anthem premises or off-site, by associates, contractors or Suppliers.</span></div>
+<div style="position:absolute;left:89.86px;top:626.96px" class="cls_013"><span class="cls_013">Weapons</span></div>
+<div style="position:absolute;left:89.86px;top:637.45px" class="cls_009"><span class="cls_009">Anthem prohibits Suppliers from keeping weapons on Anthem property, including buildings, lockers, desks,</span></div>
+<div style="position:absolute;left:89.85px;top:647.89px" class="cls_009"><span class="cls_009">work spaces, storage areas and company-owned vehicles. In addition, weapons may not be kept in vehicles</span></div>
+<div style="position:absolute;left:89.85px;top:658.33px" class="cls_009"><span class="cls_009">parked in Anthem parking lots or in personal vehicles being used for business. Weapons include, but are</span></div>
+<div style="position:absolute;left:89.85px;top:668.76px" class="cls_009"><span class="cls_009">not limited to, guns, knives and ammunition.</span></div>
+<div style="position:absolute;left:71.88px;top:723.42px" class="cls_002"><span class="cls_002">Page </span><span class="cls_003">1</span><span class="cls_002"> of </span><span class="cls_003">9</span></div>
+<div style="position:absolute;left:71.88px;top:730.14px" class="cls_002"><span class="cls_002">Last Revised:  02/10/2016</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:802px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="0b1cc12c-354b-11eb-8b25-0cc47a792c0a_id_0b1cc12c-354b-11eb-8b25-0cc47a792c0a_files/background2.jpg" width=612 height=792></div>
+<div style="position:absolute;left:89.88px;top:70.86px" class="cls_013"><span class="cls_013">Compensation</span></div>
+<div style="position:absolute;left:89.88px;top:81.30px" class="cls_009"><span class="cls_009">Suppliers will not pay less than the minimum wage in accordance with local labor laws. In addition to</span></div>
+<div style="position:absolute;left:89.88px;top:91.79px" class="cls_009"><span class="cls_009">compensation for regular hours, Supplier employees will be fairly compensated for overtime work</span></div>
+<div style="position:absolute;left:89.88px;top:102.11px" class="cls_009"><span class="cls_009">in accordance with local labor laws. Other benefits must meet or exceed local laws and standards.</span></div>
+<div style="position:absolute;left:89.88px;top:126.71px" class="cls_013"><span class="cls_013">Equal Employment Opportunity</span></div>
+<div style="position:absolute;left:89.88px;top:137.21px" class="cls_009"><span class="cls_009">Suppliers will foster a positive work environment that promotes equal employment opportunity in</span></div>
+<div style="position:absolute;left:89.88px;top:147.64px" class="cls_009"><span class="cls_009">accordance with all applicable Equal Employment/Anti-Harassment laws, directives and regulations of</span></div>
+<div style="position:absolute;left:89.89px;top:158.08px" class="cls_009"><span class="cls_009">federal, State, and local governing bodies. Suppliers will prohibit discriminatory practices in the</span></div>
+<div style="position:absolute;left:89.89px;top:168.58px" class="cls_009"><span class="cls_009">recruiting, hiring, training, promoting, and compensating of its employees on grounds of race, color,</span></div>
+<div style="position:absolute;left:89.89px;top:179.01px" class="cls_009"><span class="cls_009">creed, religion, gender, national origin, sexual orientation, gender identity, veteran status, disability,</span></div>
+<div style="position:absolute;left:89.89px;top:189.45px" class="cls_009"><span class="cls_009">age, marital status, or any other legally protected characteristic.</span></div>
+<div style="position:absolute;left:89.89px;top:210.32px" class="cls_009"><span class="cls_009">As a federal contractor Anthem complies with federal EEO obligations. When Suppliers provide services</span></div>
+<div style="position:absolute;left:89.89px;top:220.76px" class="cls_009"><span class="cls_009">or goods to Anthem relating to one of its federal contracts, Suppliers agree to comply with the following</span></div>
+<div style="position:absolute;left:89.88px;top:231.26px" class="cls_009"><span class="cls_009">as required under federal regulations:</span></div>
+<div style="position:absolute;left:89.88px;top:253.33px" class="cls_016"><span class="cls_016">Supplier shall abide by the requirements of 41 CFR §§ 60-1.4(a), 60-300.5(a) and 60-741.5(a).</span></div>
+<div style="position:absolute;left:89.88px;top:265.33px" class="cls_016"><span class="cls_016">These regulations prohibit discrimination against qualified individuals based on their status as</span></div>
+<div style="position:absolute;left:89.88px;top:277.33px" class="cls_016"><span class="cls_016">protected  veterans  or  individuals  with  disabilities,  and  prohibit  discrimination  against  all</span></div>
+<div style="position:absolute;left:89.88px;top:289.32px" class="cls_016"><span class="cls_016">individuals  based  on  their  race,  color,  religion,  sex,  sexual  orientation,  gender  identity  or</span></div>
+<div style="position:absolute;left:89.88px;top:301.32px" class="cls_016"><span class="cls_016">national  origin.  Moreover,  these  regulations  require  that  covered  prime  contractors  and</span></div>
+<div style="position:absolute;left:89.88px;top:313.31px" class="cls_016"><span class="cls_016">subcontractors  take  affirmative  action  to  employ  and  advance  in  employment  individuals</span></div>
+<div style="position:absolute;left:89.88px;top:325.31px" class="cls_016"><span class="cls_016">without regard to race, color, religion, sex, sexual orientation, gender identity, national origin,</span></div>
+<div style="position:absolute;left:89.88px;top:337.31px" class="cls_016"><span class="cls_016">protected veteran status or disability.</span></div>
+<div style="position:absolute;left:89.88px;top:362.21px" class="cls_013"><span class="cls_013">Freedom of Association and Collective Bargaining</span></div>
+<div style="position:absolute;left:89.88px;top:372.71px" class="cls_009"><span class="cls_009">Suppliers will recognize and respect the right of its employees to form or join trade unions of their own</span></div>
+<div style="position:absolute;left:89.88px;top:383.14px" class="cls_009"><span class="cls_009">choosing  and  to  bargain  collectively.  Where  the  right  of  freedom  of  association  and  collective</span></div>
+<div style="position:absolute;left:89.88px;top:393.58px" class="cls_009"><span class="cls_009">bargaining is restricted under law, Suppliers will not hinder the development of parallel means for</span></div>
+<div style="position:absolute;left:89.88px;top:404.02px" class="cls_009"><span class="cls_009">independent, free association and bargaining.</span></div>
+<div style="position:absolute;left:89.88px;top:428.73px" class="cls_013"><span class="cls_013">Labor Practices</span></div>
+<div style="position:absolute;left:89.88px;top:439.17px" class="cls_009"><span class="cls_009">Suppliers will not use forced or prison labor in the supply of materials, products, or services. Suppliers</span></div>
+<div style="position:absolute;left:89.88px;top:449.61px" class="cls_009"><span class="cls_009">will not employ workers under age 14 or the minimum age for completing compulsory education,</span></div>
+<div style="position:absolute;left:89.88px;top:460.10px" class="cls_009"><span class="cls_009">whichever is higher. Supplier employees will be treated with respect and dignity, therefore, no</span></div>
+<div style="position:absolute;left:89.88px;top:470.54px" class="cls_009"><span class="cls_009">employee shall be subject to any physical, sexual, psychological, or verbal harassment or abuse.</span></div>
+<div style="position:absolute;left:89.88px;top:495.14px" class="cls_013"><span class="cls_013">Work Hours</span></div>
+<div style="position:absolute;left:89.88px;top:505.58px" class="cls_009"><span class="cls_009">Supplier employees should not work more than the maximum hours of daily labor set by local laws.</span></div>
+<div style="position:absolute;left:89.88px;top:516.01px" class="cls_009"><span class="cls_009">These employees should receive a minimum of one day off every seven days.</span></div>
+<div style="position:absolute;left:89.88px;top:540.49px" class="cls_013"><span class="cls_013">Environmental Responsibility</span></div>
+<div style="position:absolute;left:89.88px;top:550.99px" class="cls_009"><span class="cls_009">Suppliers shall comply with all applicable environmental laws and regulations pertaining to hazardous</span></div>
+<div style="position:absolute;left:89.88px;top:561.42px" class="cls_009"><span class="cls_009">materials, air emissions, and waste and wastewater discharges, including the manufacture, transportation,</span></div>
+<div style="position:absolute;left:89.88px;top:571.86px" class="cls_009"><span class="cls_009">storage, disposal and release into the environment of such.</span></div>
+<div style="position:absolute;left:79.08px;top:606.96px" class="cls_009"><span class="cls_009">2. </span><span class="cls_032">USE OF ANTHEM’S ASSETS</span></div>
+<div style="position:absolute;left:89.88px;top:631.20px" class="cls_009"><span class="cls_009">Anthem has a variety of tangible and intangible assets that are of great value to its competitiveness</span></div>
+<div style="position:absolute;left:89.88px;top:641.70px" class="cls_009"><span class="cls_009">and success as a leader in the health benefits industry. They include not only valuable proprietary</span></div>
+<div style="position:absolute;left:89.88px;top:652.19px" class="cls_009"><span class="cls_009">and confidential information but physical assets. Protecting all of Anthem’s assets is very important.</span></div>
+<div style="position:absolute;left:89.87px;top:662.69px" class="cls_009"><span class="cls_009">Their loss, theft or misuse jeopardizes the business and operations of Anthem and its stakeholders.</span></div>
+<div style="position:absolute;left:89.87px;top:687.29px" class="cls_009"><span class="cls_009">The safeguarding of information entrusted by Anthem to Suppliers is vital to Anthem’s continued</span></div>
+<div style="position:absolute;left:89.86px;top:697.84px" class="cls_009"><span class="cls_009">success, security and integrity. All Suppliers have an obligation to practice and promote a secure work</span></div>
+<div style="position:absolute;left:71.88px;top:723.42px" class="cls_002"><span class="cls_002">Page </span><span class="cls_003">2</span><span class="cls_002"> of </span><span class="cls_003">9</span></div>
+<div style="position:absolute;left:71.88px;top:730.14px" class="cls_002"><span class="cls_002">Last Revised:  02/10/2016</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:1604px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="0b1cc12c-354b-11eb-8b25-0cc47a792c0a_id_0b1cc12c-354b-11eb-8b25-0cc47a792c0a_files/background3.jpg" width=612 height=792></div>
+<div style="position:absolute;left:89.88px;top:70.86px" class="cls_009"><span class="cls_009">environment that protects the confidentiality, integrity, and availability of the facilities, systems,</span></div>
+<div style="position:absolute;left:89.88px;top:81.36px" class="cls_009"><span class="cls_009">applications, and information under Anthem’s control.</span></div>
+<div style="position:absolute;left:97.08px;top:105.83px" class="cls_013"><span class="cls_013">Physical Assets</span></div>
+<div style="position:absolute;left:97.07px;top:116.33px" class="cls_009"><span class="cls_009">Suppliers may only use Anthem’s property and other physical assets to provide services or fulfill its</span></div>
+<div style="position:absolute;left:97.06px;top:126.77px" class="cls_009"><span class="cls_009">other contractual obligations to Anthem. Anthem assets include but are not limited to, computers,</span></div>
+<div style="position:absolute;left:97.05px;top:137.21px" class="cls_009"><span class="cls_009">email, internet/intranet, fax, phone, copiers and time. Inappropriate, inflammatory and derogatory</span></div>
+<div style="position:absolute;left:97.05px;top:147.64px" class="cls_009"><span class="cls_009">communications are prohibited, including chain emails, jokes, sending, and receiving or viewing</span></div>
+<div style="position:absolute;left:97.05px;top:158.08px" class="cls_009"><span class="cls_009">sexually explicit or suggestive communications. In addition, no unauthorized software is to be</span></div>
+<div style="position:absolute;left:97.05px;top:168.58px" class="cls_009"><span class="cls_009">downloaded to Anthem’s computers.</span></div>
+<div style="position:absolute;left:97.05px;top:189.88px" class="cls_009"><span class="cls_009">Suppliers must promptly report any activities that may compromise the security and the</span></div>
+<div style="position:absolute;left:97.05px;top:200.37px" class="cls_009"><span class="cls_009">confidentiality of Anthem’s data to the Anthem contact overseeing the contract.</span></div>
+<div style="position:absolute;left:97.04px;top:224.91px" class="cls_013"><span class="cls_013">Electronic Assets</span></div>
+<div style="position:absolute;left:97.04px;top:235.41px" class="cls_009"><span class="cls_009">User IDs and passwords are for the exclusive use of the intended recipient only and should never be</span></div>
+<div style="position:absolute;left:97.04px;top:245.84px" class="cls_009"><span class="cls_009">used or “tested” by others. Suppliers are responsible for what's done with their user ID and password.</span></div>
+<div style="position:absolute;left:97.04px;top:256.28px" class="cls_009"><span class="cls_009">Likewise, Suppliers may only use the user ID and password assigned to them to gain access to an</span></div>
+<div style="position:absolute;left:97.04px;top:266.72px" class="cls_009"><span class="cls_009">Anthem system. Violations of this policy can result in termination of your contract with Anthem.</span></div>
+<div style="position:absolute;left:97.03px;top:291.26px" class="cls_009"><span class="cls_009">Use of instant messaging services is permitted only when participating in authorized Anthem chat</span></div>
+<div style="position:absolute;left:97.02px;top:301.75px" class="cls_009"><span class="cls_009">sessions or other authorized use. Personal use of Anthem Internet resources to utilize any instant</span></div>
+<div style="position:absolute;left:97.01px;top:312.25px" class="cls_009"><span class="cls_009">messaging services is prohibited.</span></div>
+<div style="position:absolute;left:97.01px;top:336.73px" class="cls_009"><span class="cls_009">Suppliers have no expectation of privacy when using Anthem information and telecommunications</span></div>
+<div style="position:absolute;left:97.00px;top:347.28px" class="cls_009"><span class="cls_009">systems. Electronic mail content may be reviewed as part of an ethics and compliance investigation or</span></div>
+<div style="position:absolute;left:97.00px;top:357.78px" class="cls_009"><span class="cls_009">whenever deemed necessary.</span></div>
+<div style="position:absolute;left:86.28px;top:392.82px" class="cls_009"><span class="cls_009">3. </span><span class="cls_032">BUSINESS PRACTICES</span></div>
+<div style="position:absolute;left:97.08px;top:417.48px" class="cls_013"><span class="cls_013">Recording, Reporting & Retaining Information</span></div>
+<div style="position:absolute;left:97.08px;top:427.98px" class="cls_009"><span class="cls_009">Accurate and complete records are vital to the Anthem corporate decision-making process and to the</span></div>
+<div style="position:absolute;left:97.08px;top:438.41px" class="cls_009"><span class="cls_009">collection and reporting of our financial, legal and regulatory data. All records, expense accounts,</span></div>
+<div style="position:absolute;left:97.08px;top:448.85px" class="cls_009"><span class="cls_009">vouchers, invoices, payroll and service records, reports to government agencies, measurement and</span></div>
+<div style="position:absolute;left:97.08px;top:459.29px" class="cls_009"><span class="cls_009">performance records, and other essential data must be prepared with care, honesty and accuracy.</span></div>
+<div style="position:absolute;left:97.08px;top:483.83px" class="cls_013"><span class="cls_013">Records Retention</span></div>
+<div style="position:absolute;left:97.08px;top:494.26px" class="cls_009"><span class="cls_009">In addition to any specific obligations regarding Anthem records and files that may exist in the</span></div>
+<div style="position:absolute;left:97.08px;top:504.70px" class="cls_009"><span class="cls_009">Supplier’s written agreement with Anthem, Suppliers must create, retain and dispose of business</span></div>
+<div style="position:absolute;left:97.07px;top:515.14px" class="cls_009"><span class="cls_009">records in full compliance with all applicable legal and regulatory requirements.</span></div>
+<div style="position:absolute;left:97.07px;top:539.61px" class="cls_013"><span class="cls_013">Conflicts of Interest</span></div>
+<div style="position:absolute;left:97.07px;top:550.11px" class="cls_009"><span class="cls_009">Suppliers must avoid the appearance of improprieties and/or conflicts of interest, as such relate to</span></div>
+<div style="position:absolute;left:97.07px;top:560.67px" class="cls_009"><span class="cls_009">Anthem. During the course of negotiating its agreement with Anthem or during performance of its</span></div>
+<div style="position:absolute;left:97.07px;top:571.16px" class="cls_009"><span class="cls_009">obligations thereunder, Supplier shall not deal directly with any Anthem employee whose spouse,</span></div>
+<div style="position:absolute;left:97.07px;top:581.66px" class="cls_009"><span class="cls_009">domestic partner or other family member or relative holds a significant financial interest in the</span></div>
+<div style="position:absolute;left:97.07px;top:592.16px" class="cls_009"><span class="cls_009">Supplier.</span></div>
+<div style="position:absolute;left:97.07px;top:616.69px" class="cls_013"><span class="cls_013">Legal and Regulatory Compliance</span></div>
+<div style="position:absolute;left:97.07px;top:627.13px" class="cls_009"><span class="cls_009">Anthem Suppliers shall conduct their business in full compliance with all applicable laws and regulations</span></div>
+<div style="position:absolute;left:97.07px;top:637.69px" class="cls_009"><span class="cls_009">while conducting business with and/or on behalf of Anthem. In addition to any specific</span></div>
+<div style="position:absolute;left:97.06px;top:648.18px" class="cls_009"><span class="cls_009">obligations under the Supplier’s agreement with Anthem, all Suppliers shall, without limitation:</span></div>
+<div style="position:absolute;left:116.86px;top:673.92px" class="cls_010"><span class="cls_010">•</span><span class="cls_011"> </span><span class="cls_009">Comply with all applicable statutory and regulatory requirements for government contracts</span></div>
+<div style="position:absolute;left:125.87px;top:684.42px" class="cls_009"><span class="cls_009">entered into by Anthem and for which Supplier may be providing goods or services, directly or</span></div>
+<div style="position:absolute;left:125.86px;top:694.92px" class="cls_009"><span class="cls_009">indirectly, in connection with such government contract, including the False Statements Act,</span></div>
+<div style="position:absolute;left:125.86px;top:705.41px" class="cls_009"><span class="cls_009">federal anti-kickback statutes and the like.</span></div>
+<div style="position:absolute;left:71.88px;top:723.42px" class="cls_002"><span class="cls_002">Page </span><span class="cls_003">3</span><span class="cls_002"> of </span><span class="cls_003">9</span></div>
+<div style="position:absolute;left:71.88px;top:730.14px" class="cls_002"><span class="cls_002">Last Revised:  02/10/2016</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:2406px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="0b1cc12c-354b-11eb-8b25-0cc47a792c0a_id_0b1cc12c-354b-11eb-8b25-0cc47a792c0a_files/background4.jpg" width=612 height=792></div>
+<div style="position:absolute;left:116.88px;top:70.86px" class="cls_010"><span class="cls_010">•</span><span class="cls_011"> </span><span class="cls_009">Conduct business in full compliance with antitrust and competition laws.</span></div>
+<div style="position:absolute;left:116.89px;top:82.62px" class="cls_010"><span class="cls_010">•</span><span class="cls_011"> </span><span class="cls_009">Comply with all applicable environmental laws and regulations regarding hazardous materials,</span></div>
+<div style="position:absolute;left:125.89px;top:93.17px" class="cls_009"><span class="cls_009">air emissions, waste and wastewater discharges, including the manufacture, transportation,</span></div>
+<div style="position:absolute;left:125.89px;top:103.67px" class="cls_009"><span class="cls_009">storage, disposal and release to the environment of such materials.</span></div>
+<div style="position:absolute;left:116.90px;top:115.43px" class="cls_010"><span class="cls_010">•</span><span class="cls_011"> </span><span class="cls_009">Be honest and forthcoming in communications with and disclosures to regulatory</span></div>
+<div style="position:absolute;left:125.90px;top:125.98px" class="cls_009"><span class="cls_009">agency representatives and government officials.</span></div>
+<div style="position:absolute;left:116.91px;top:136.97px" class="cls_010"><span class="cls_010">•</span><span class="cls_011"> </span><span class="cls_009">Comply with the anti-corruption laws of the countries in which they do business, including the</span></div>
+<div style="position:absolute;left:125.92px;top:147.46px" class="cls_009"><span class="cls_009">U.S. Foreign Corrupt Practices Act, and not make any direct or indirect payments or promises of</span></div>
+<div style="position:absolute;left:125.92px;top:157.96px" class="cls_009"><span class="cls_009">payments to foreign government officials for the purpose of inducing any individual to misuse</span></div>
+<div style="position:absolute;left:125.92px;top:168.46px" class="cls_009"><span class="cls_009">his/her position to retain services for or provide goods to Anthem.</span></div>
+<div style="position:absolute;left:98.91px;top:192.99px" class="cls_013"><span class="cls_013">Supplier Reporting</span></div>
+<div style="position:absolute;left:98.91px;top:203.55px" class="cls_009"><span class="cls_009">All Anthem Suppliers and subcontractors are responsible for promptly reporting actual or suspected</span></div>
+<div style="position:absolute;left:98.91px;top:213.93px" class="cls_009"><span class="cls_009">ethics or compliance issues (E&C Issues) involving Anthem, Inc. or any of its subsidiary or affiliated</span></div>
+<div style="position:absolute;left:98.90px;top:224.25px" class="cls_009"><span class="cls_009">entities or agents (Anthem) to the Anthem manager assigning their work or the Ethics and Compliance</span></div>
+<div style="position:absolute;left:98.89px;top:234.56px" class="cls_009"><span class="cls_009">department. Examples of E&C Issues include violations of applicable law and/or Anthem policies. The</span></div>
+<div style="position:absolute;left:98.89px;top:244.88px" class="cls_009"><span class="cls_009">Ethics and Compliance department provides various reporting mechanisms to submit reports or to ask</span></div>
+<div style="position:absolute;left:98.89px;top:255.20px" class="cls_009"><span class="cls_009">questions. Reports to the Ethics and Compliance department can be made using one of the following</span></div>
+<div style="position:absolute;left:98.89px;top:265.52px" class="cls_009"><span class="cls_009">channels:</span></div>
+<div style="position:absolute;left:116.89px;top:286.21px" class="cls_009"><span class="cls_009">1. Call the Ethics and Compliance HelpLine from the United States at 1-877-725-2702 and from</span></div>
+<div style="position:absolute;left:130.39px;top:296.53px" class="cls_009"><span class="cls_009">Ireland at (1-800-550-000) 877-725-2702</span></div>
+<div style="position:absolute;left:116.89px;top:317.16px" class="cls_009"><span class="cls_009">2. Send an email to </span><A HREF="mailto:ethicsandcompliance@wellpoint.com">ethicsandcompliance@Anthem.com</A> </div>
+<div style="position:absolute;left:116.89px;top:337.86px" class="cls_009"><span class="cls_009">3. Send a letter to the following address:</span></div>
+<div style="position:absolute;left:130.38px;top:358.50px" class="cls_009"><span class="cls_009">Ethics and Compliance Department</span></div>
+<div style="position:absolute;left:130.38px;top:368.81px" class="cls_009"><span class="cls_009">Anthem, Inc.</span></div>
+<div style="position:absolute;left:130.38px;top:379.13px" class="cls_009"><span class="cls_009">Post Office Box 791</span></div>
+<div style="position:absolute;left:130.38px;top:389.45px" class="cls_009"><span class="cls_009">Indianapolis, IN 46206</span></div>
+<div style="position:absolute;left:98.89px;top:410.14px" class="cls_013"><span class="cls_013">Bribery and Corruption</span></div>
+<div style="position:absolute;left:98.89px;top:420.46px" class="cls_009"><span class="cls_009">Anthem prohibits any form of bribery or corrupt payments.  When working on our behalf or on our</span></div>
+<div style="position:absolute;left:98.89px;top:430.78px" class="cls_009"><span class="cls_009">business, Suppliers are required to comply with all applicable U.S. and local anti-bribery laws, such as the</span></div>
+<div style="position:absolute;left:98.89px;top:441.10px" class="cls_009"><span class="cls_009">U.S. Foreign Corrupt Practices Act, the Travel Act and similar laws in foreign jurisdictions.</span></div>
+<div style="position:absolute;left:98.89px;top:461.79px" class="cls_009"><span class="cls_009">Suppliers must not, directly or indirectly, make or offer bribes, kickbacks, or other payments of money or</span></div>
+<div style="position:absolute;left:98.89px;top:472.11px" class="cls_009"><span class="cls_009">anything of value to anyone, including officials, employees, or representatives of any government,</span></div>
+<div style="position:absolute;left:98.89px;top:482.43px" class="cls_009"><span class="cls_009">company, or public or international organization, or to any other third party, for the purpose of</span></div>
+<div style="position:absolute;left:98.89px;top:492.74px" class="cls_009"><span class="cls_009">wrongfully obtaining, retaining or directing our business. This includes giving money or anything of value</span></div>
+<div style="position:absolute;left:98.89px;top:503.06px" class="cls_009"><span class="cls_009">to any third party where there is reason to believe it will be passed on to anyone involved in the decision</span></div>
+<div style="position:absolute;left:98.89px;top:513.38px" class="cls_009"><span class="cls_009">making process for the purpose of influencing the decision.</span></div>
+<div style="position:absolute;left:98.88px;top:534.08px" class="cls_009"><span class="cls_009">If Suppliers are aware of actual or suspected bribery or corrupt payments, Suppliers must notify the</span></div>
+<div style="position:absolute;left:98.88px;top:544.39px" class="cls_009"><span class="cls_009">Anthem Ethics & Compliance department through our Ethics & Compliance HelpLine at 1-877-725-2702</span></div>
+<div style="position:absolute;left:98.87px;top:552.36px" class="cls_009"><span class="cls_009">(in the US) or send an email to</span><span class="cls_017"> </span><span class="cls_030">ethicsandcompliance@Anthem.com</span><span class="cls_009">.</span></div>
+<div style="position:absolute;left:98.88px;top:579.18px" class="cls_018"><span class="cls_018">Assurances of Compliance</span></div>
+<div style="position:absolute;left:98.88px;top:589.50px" class="cls_019"><span class="cls_019">Upon reasonable request, Suppliers shall provide Anthem with assurances of Supplier’s compliance with</span></div>
+<div style="position:absolute;left:98.88px;top:599.82px" class="cls_019"><span class="cls_019">its Agreement and Anthem Policies and Procedures.  Reasonable assurances include, but are not limited</span></div>
+<div style="position:absolute;left:98.88px;top:610.13px" class="cls_019"><span class="cls_019">to, Supplier’s response to annual surveys issued by Anthem related to its provision of goods or services,</span></div>
+<div style="position:absolute;left:98.87px;top:620.45px" class="cls_019"><span class="cls_019">certain contract requirements and/or the Agreement generally.</span></div>
+<div style="position:absolute;left:98.87px;top:638.70px" class="cls_018"><span class="cls_018">Meetings with Anthem Associates</span></div>
+<div style="position:absolute;left:98.88px;top:651.48px" class="cls_019"><span class="cls_019">Suppliers agree that their designated sourcing associate will be given advance notice or will be present in</span></div>
+<div style="position:absolute;left:98.88px;top:661.80px" class="cls_019"><span class="cls_019">any meetings with Anthem associates involving any of the following:</span></div>
+<div style="position:absolute;left:399.06px;top:661.80px" class="cls_019"><span class="cls_019">1) Existing contract terms and</span></div>
+<div style="position:absolute;left:98.88px;top:672.12px" class="cls_019"><span class="cls_019">conditions; 2) Sales presentations or proposals for new goods and/or services offered for sale; and/or 3)</span></div>
+<div style="position:absolute;left:98.88px;top:682.43px" class="cls_019"><span class="cls_019">Any proposed changes or updates to the scope, nature, duration or price of currently contracted goods or</span></div>
+<div style="position:absolute;left:98.88px;top:692.81px" class="cls_019"><span class="cls_019">services.  If you are unfamiliar with your designated sourcing associate, notification must be made by</span></div>
+<div style="position:absolute;left:98.89px;top:700.68px" class="cls_019"><span class="cls_019">sending an email to </span><span class="cls_033">Purchasing.Help@Anthem.com</span><span class="cls_019">.</span></div>
+<div style="position:absolute;left:71.88px;top:723.42px" class="cls_002"><span class="cls_002">Page </span><span class="cls_003">4</span><span class="cls_002"> of </span><span class="cls_003">9</span></div>
+<div style="position:absolute;left:71.88px;top:730.14px" class="cls_002"><span class="cls_002">Last Revised:  02/10/2016</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:3208px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="0b1cc12c-354b-11eb-8b25-0cc47a792c0a_id_0b1cc12c-354b-11eb-8b25-0cc47a792c0a_files/background5.jpg" width=612 height=792></div>
+<div style="position:absolute;left:86.28px;top:70.86px" class="cls_009"><span class="cls_009">4. </span><span class="cls_032">ANTHEM PRIVACY AND SECURITY REQUIREMENTS</span></div>
+<div style="position:absolute;left:97.08px;top:95.40px" class="cls_013"><span class="cls_013">Privacy</span></div>
+<div style="position:absolute;left:97.08px;top:105.84px" class="cls_009"><span class="cls_009">Anthem, Inc. and its workforce have a responsibility to protect the confidentiality of the Protected Health</span></div>
+<div style="position:absolute;left:97.08px;top:116.27px" class="cls_009"><span class="cls_009">Information (PHI) it collects uses and discloses about its members and applicants. Suppliers that provide</span></div>
+<div style="position:absolute;left:97.08px;top:126.71px" class="cls_009"><span class="cls_009">a service to or on behalf of Anthem which requires the use or disclosure of PHI shall be deemed Business</span></div>
+<div style="position:absolute;left:97.08px;top:137.15px" class="cls_009"><span class="cls_009">Associates, in accordance with the Health Insurance Portability and Accountability Act of 1996, and shall</span></div>
+<div style="position:absolute;left:97.08px;top:147.58px" class="cls_009"><span class="cls_009">enter into a Business Associate Agreement and Security Addendum with Anthem.</span></div>
+<div style="position:absolute;left:97.07px;top:172.18px" class="cls_013"><span class="cls_013">Proprietary and Other Confidential Information</span></div>
+<div style="position:absolute;left:97.07px;top:182.68px" class="cls_009"><span class="cls_009">In addition to PHI, Suppliers may have exposure to information that is not PHI, but is confidential</span></div>
+<div style="position:absolute;left:97.07px;top:193.18px" class="cls_009"><span class="cls_009">and/or proprietary to Anthem. Anthem has a variety of information assets that are of great value to our</span></div>
+<div style="position:absolute;left:97.06px;top:203.67px" class="cls_009"><span class="cls_009">competitiveness and success as a leader in our industry. They include valuable confidential and</span></div>
+<div style="position:absolute;left:97.06px;top:214.17px" class="cls_009"><span class="cls_009">proprietary information, material non-public information, and information relating to our members,</span></div>
+<div style="position:absolute;left:97.07px;top:224.67px" class="cls_009"><span class="cls_009">associates and government contracts. Suppliers must protect all confidential and proprietary</span></div>
+<div style="position:absolute;left:97.07px;top:235.16px" class="cls_009"><span class="cls_009">information gained from Anthem against inappropriate access and disclosure at all times.</span></div>
+<div style="position:absolute;left:97.07px;top:245.66px" class="cls_009"><span class="cls_009">Misappropriation of Anthem confidential and proprietary information may constitute theft of Anthem</span></div>
+<div style="position:absolute;left:97.06px;top:256.16px" class="cls_009"><span class="cls_009">trade secrets and/or violation of unfair competition laws.</span></div>
+<div style="position:absolute;left:97.06px;top:280.63px" class="cls_013"><span class="cls_013">Supplier Facility Access Policy</span></div>
+<div style="position:absolute;left:97.06px;top:291.13px" class="cls_009"><span class="cls_009">Standard facility access policies and procedures have been established to provide specific guidelines for</span></div>
+<div style="position:absolute;left:97.06px;top:301.69px" class="cls_009"><span class="cls_009">Supplier access to Anthem facilities. Suppliers must adhere to Anthem security requirements and all</span></div>
+<div style="position:absolute;left:97.06px;top:312.18px" class="cls_009"><span class="cls_009">safety standards, practices, and procedures. Supplier representatives are not permitted to possess</span></div>
+<div style="position:absolute;left:97.06px;top:322.68px" class="cls_009"><span class="cls_009">permanent Anthem ID access badges for any Anthem facility. Suppliers who violate these policies may</span></div>
+<div style="position:absolute;left:97.05px;top:333.18px" class="cls_009"><span class="cls_009">be subject to disciplinary actions.</span></div>
+<div style="position:absolute;left:97.05px;top:353.99px" class="cls_009"><span class="cls_009">When considering facility access, the Supplier must adhere to the policy identified below:</span></div>
+<div style="position:absolute;left:116.85px;top:380.03px" class="cls_010"><span class="cls_010">•</span><span class="cls_011"> </span><span class="cls_009">Review and follow guidelines identified in this Supplier Code of Conduct.</span></div>
+<div style="position:absolute;left:116.86px;top:391.73px" class="cls_010"><span class="cls_010">•</span><span class="cls_011"> </span><span class="cls_009">Anthem security requirements and safety standards should be adhered to at all times.</span></div>
+<div style="position:absolute;left:116.86px;top:402.28px" class="cls_010"><span class="cls_010">•</span><span class="cls_011"> </span><span class="cls_009">Visits must be scheduled directly with an Anthem contact prior to access.</span></div>
+<div style="position:absolute;left:116.86px;top:412.78px" class="cls_010"><span class="cls_010">•</span><span class="cls_011"> </span><span class="cls_009">Anthem may, at its option, require Supplier and/or Supplier’s employees or Subcontractors to</span></div>
+<div style="position:absolute;left:125.87px;top:423.28px" class="cls_009"><span class="cls_009">sign separate agreements regarding access to Anthem facilities or equipment.</span></div>
+<div style="position:absolute;left:97.06px;top:447.81px" class="cls_009"><span class="cls_009">Under normal circumstances, Suppliers may be permitted access to Anthem facilities for the</span></div>
+<div style="position:absolute;left:97.06px;top:458.31px" class="cls_009"><span class="cls_009">following reasons:</span></div>
+<div style="position:absolute;left:116.86px;top:482.79px" class="cls_010"><span class="cls_010">•</span><span class="cls_011"> </span><span class="cls_009">Urgent off boarding of temporary workers.</span></div>
+<div style="position:absolute;left:116.86px;top:494.49px" class="cls_010"><span class="cls_010">•</span><span class="cls_011"> </span><span class="cls_009">Retrieval of temporary worker property.</span></div>
+<div style="position:absolute;left:116.87px;top:506.36px" class="cls_010"><span class="cls_010">•</span><span class="cls_011"> </span><span class="cls_009">Return of Anthem property.</span></div>
+<div style="position:absolute;left:116.87px;top:518.30px" class="cls_010"><span class="cls_010">•</span><span class="cls_011"> </span><span class="cls_009">Facilitating any temporary worker emergencies.</span></div>
+<div style="position:absolute;left:116.87px;top:530.00px" class="cls_010"><span class="cls_010">•</span><span class="cls_011"> </span><span class="cls_009">Attend meetings where business related items will be discussed.</span></div>
+<div style="position:absolute;left:116.87px;top:541.87px" class="cls_010"><span class="cls_010">•</span><span class="cls_011"> </span><span class="cls_009">Supplier meetings.</span></div>
+<div style="position:absolute;left:97.08px;top:566.29px" class="cls_013"><span class="cls_013">Supplier Use of Subcontracted Firms</span></div>
+<div style="position:absolute;left:97.08px;top:576.79px" class="cls_009"><span class="cls_009">Use of subcontracted firms by Suppliers may be permitted in order to fulfill Anthem requirements. If</span></div>
+<div style="position:absolute;left:97.08px;top:587.29px" class="cls_009"><span class="cls_009">such use is permitted by any written agreement between Anthem and the Supplier, the following shall</span></div>
+<div style="position:absolute;left:97.08px;top:597.72px" class="cls_009"><span class="cls_009">apply:</span></div>
+<div style="position:absolute;left:116.88px;top:618.72px" class="cls_010"><span class="cls_010">•</span><span class="cls_011"> </span><span class="cls_009">Subcontractor firm personnel may use the SourcePoint system as a representative of the Supplier</span></div>
+<div style="position:absolute;left:125.89px;top:629.03px" class="cls_009"><span class="cls_009">(account logon obtained from Supplier’s system administrator).</span></div>
+<div style="position:absolute;left:116.89px;top:639.41px" class="cls_010"><span class="cls_010">•</span><span class="cls_011"> </span><span class="cls_009">Subcontractor firm personnel may not represent their firm using their firm’s name or logo on</span></div>
+<div style="position:absolute;left:125.89px;top:649.73px" class="cls_009"><span class="cls_009">business cards, candidate resumes, etc. or any correspondence with Anthem personnel.</span></div>
+<div style="position:absolute;left:116.89px;top:660.05px" class="cls_010"><span class="cls_010">•</span><span class="cls_011"> </span><span class="cls_009">Supplier must make all due and payable payments to Subcontractor firm.</span></div>
+<div style="position:absolute;left:71.88px;top:723.42px" class="cls_002"><span class="cls_002">Page </span><span class="cls_003">5</span><span class="cls_002"> of </span><span class="cls_003">9</span></div>
+<div style="position:absolute;left:71.88px;top:730.14px" class="cls_002"><span class="cls_002">Last Revised:  02/10/2016</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:4010px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="0b1cc12c-354b-11eb-8b25-0cc47a792c0a_id_0b1cc12c-354b-11eb-8b25-0cc47a792c0a_files/background6.jpg" width=612 height=792></div>
+<div style="position:absolute;left:71.88px;top:69.06px" class="cls_008"><span class="cls_008">Procurement Process Technology and Electronic Signatures</span></div>
+<div style="position:absolute;left:71.88px;top:95.16px" class="cls_009"><span class="cls_009">Anthem may require Suppliers to facilitate purchase and sale transactions under the Agreement by</span></div>
+<div style="position:absolute;left:71.88px;top:105.66px" class="cls_009"><span class="cls_009">electronically transmitting and receiving data through the Ariba, Inc. Ariba Network (“AN”). The following</span></div>
+<div style="position:absolute;left:71.88px;top:116.15px" class="cls_009"><span class="cls_009">are requirements of facilitating such transactions:</span></div>
+<div style="position:absolute;left:89.87px;top:140.57px" class="cls_009"><span class="cls_009">1.</span></div>
+<div style="position:absolute;left:107.88px;top:140.57px" class="cls_009"><span class="cls_009">Anthem and Supplier may electronically transmit and/or receive purchase and sale information and</span></div>
+<div style="position:absolute;left:107.88px;top:151.13px" class="cls_009"><span class="cls_009">related contract and other documents (collectively, “Documents”) to and from the other Party through</span></div>
+<div style="position:absolute;left:107.88px;top:161.62px" class="cls_009"><span class="cls_009">ASN.</span></div>
+<div style="position:absolute;left:89.88px;top:172.20px" class="cls_009"><span class="cls_009">2.</span></div>
+<div style="position:absolute;left:107.88px;top:172.20px" class="cls_032"><span class="cls_032">AN Membership</span><span class="cls_009"> - Supplier agrees to enter into an AN agreement with Ariba, Inc., at Supplier’s sole</span></div>
+<div style="position:absolute;left:107.88px;top:182.76px" class="cls_009"><span class="cls_009">expense, in order to transmit and receive Documents to and from Anthem. AN pricing can be found on</span></div>
+<div style="position:absolute;left:107.87px;top:193.26px" class="cls_009"><span class="cls_009">the Ariba Network site at: </span><A HREF="http://www.ariba.com/suppliermembership/smp">http://www.ariba.com/suppliermembership/smp</A> pricing.cfm</span></div>
+<div style="position:absolute;left:89.88px;top:203.76px" class="cls_009"><span class="cls_009">3.</span></div>
+<div style="position:absolute;left:107.88px;top:203.76px" class="cls_032"><span class="cls_032">System Operations</span><span class="cls_009"> - Anthem and Supplier, each at its own expense, shall arrange for the provision</span></div>
+<div style="position:absolute;left:107.88px;top:214.20px" class="cls_009"><span class="cls_009">and maintenance of equipment, software, AN services and testing necessary to transmit and receive</span></div>
+<div style="position:absolute;left:107.88px;top:224.64px" class="cls_009"><span class="cls_009">Documents effectively and reliably.</span></div>
+<div style="position:absolute;left:89.88px;top:235.08px" class="cls_009"><span class="cls_009">4.</span></div>
+<div style="position:absolute;left:107.88px;top:235.08px" class="cls_032"><span class="cls_032">Security Procedures</span><span class="cls_009"> - Anthem and Supplier shall be responsible for using security procedures that are</span></div>
+<div style="position:absolute;left:107.88px;top:245.58px" class="cls_009"><span class="cls_009">reasonably sufficient to ensure that all transmissions of Documents are authorized and to protect its</span></div>
+<div style="position:absolute;left:107.88px;top:256.08px" class="cls_009"><span class="cls_009">business records and data from improper access.</span></div>
+<div style="position:absolute;left:89.88px;top:266.58px" class="cls_009"><span class="cls_009">5.</span></div>
+<div style="position:absolute;left:107.88px;top:266.58px" class="cls_032"><span class="cls_032">Signatures</span><span class="cls_009"> - Unless otherwise agreed to by the Parties, the purchase order number (issued by</span></div>
+<div style="position:absolute;left:107.88px;top:277.02px" class="cls_009"><span class="cls_009">Anthem) shall constitute Anthem’s electronic signature and consent to any order schedule and the</span></div>
+<div style="position:absolute;left:107.88px;top:287.46px" class="cls_009"><span class="cls_009">Supplier’s invoice number shall constitute Supplier’s electronic signature and consent to provide the</span></div>
+<div style="position:absolute;left:107.88px;top:297.89px" class="cls_009"><span class="cls_009">Licensed Products and/or other Services. Each Party agrees that the Anthem purchase order number</span></div>
+<div style="position:absolute;left:107.88px;top:308.39px" class="cls_009"><span class="cls_009">or the Supplier invoice number, as issued by the respective Party, shall be sufficient to verify that such</span></div>
+<div style="position:absolute;left:107.88px;top:318.83px" class="cls_009"><span class="cls_009">Party originated the document. Neither Party shall disclose to any unauthorized person the purchase</span></div>
+<div style="position:absolute;left:107.88px;top:329.26px" class="cls_009"><span class="cls_009">order number or the invoice number. The Parties acknowledge and agree that the issuance of a</span></div>
+<div style="position:absolute;left:107.88px;top:339.70px" class="cls_009"><span class="cls_009">purchase order or invoice number shall be valid and enforceable as to the signing Party to the same</span></div>
+<div style="position:absolute;left:107.88px;top:350.14px" class="cls_009"><span class="cls_009">extent as an inked original signature, (ii) these documents shall constitute “original” documents when</span></div>
+<div style="position:absolute;left:107.88px;top:360.58px" class="cls_009"><span class="cls_009">printed from electronic files and records established and maintained by either Party in the normal</span></div>
+<div style="position:absolute;left:107.88px;top:371.07px" class="cls_009"><span class="cls_009">course of business.</span></div>
+<div style="position:absolute;left:89.88px;top:381.54px" class="cls_009"><span class="cls_009">6.</span></div>
+<div style="position:absolute;left:107.88px;top:381.54px" class="cls_032"><span class="cls_032">Garbled Transmissions</span><span class="cls_009"> - If any transmitted Document is received in an incomplete, unintelligible or</span></div>
+<div style="position:absolute;left:107.88px;top:392.04px" class="cls_009"><span class="cls_009">garbled form, the receiving Party shall promptly notify the originating Party (if identifiable from the</span></div>
+<div style="position:absolute;left:107.88px;top:402.54px" class="cls_009"><span class="cls_009">Document received) in a reasonable manner. In the absence of such a notice, the originating Party’s</span></div>
+<div style="position:absolute;left:107.88px;top:413.03px" class="cls_009"><span class="cls_009">records of the contents of such Document shall control.</span></div>
+<div style="position:absolute;left:89.88px;top:423.60px" class="cls_009"><span class="cls_009">7.</span></div>
+<div style="position:absolute;left:107.88px;top:423.60px" class="cls_032"><span class="cls_032">Validity and Enforceability</span><span class="cls_009"> - Agreement of these procure-to-pay terms evidences the mutual intent of</span></div>
+<div style="position:absolute;left:107.88px;top:434.10px" class="cls_009"><span class="cls_009">the Parties to create binding purchase and sale obligations pursuant to the electronic transmission</span></div>
+<div style="position:absolute;left:107.88px;top:444.60px" class="cls_009"><span class="cls_009">and receipt of Documents specifying certain of the applicable terms.</span></div>
+<div style="position:absolute;left:89.88px;top:455.10px" class="cls_009"><span class="cls_009">8.</span></div>
+<div style="position:absolute;left:107.88px;top:455.10px" class="cls_032"><span class="cls_032">Signed Document</span><span class="cls_009"> - Any Document properly transmitted pursuant to these procure-to-pay terms</span></div>
+<div style="position:absolute;left:107.88px;top:465.60px" class="cls_009"><span class="cls_009">shall be considered, in connection with any Transaction, or the Agreement, to be a “writing” or “in</span></div>
+<div style="position:absolute;left:107.88px;top:476.04px" class="cls_009"><span class="cls_009">writing”, and any such Document containing, or to which there is affixed, a Signature (“Signed</span></div>
+<div style="position:absolute;left:107.88px;top:486.47px" class="cls_009"><span class="cls_009">Document”) shall be deemed for all purposes (a) to have been “signed” and (b) to constitute an</span></div>
+<div style="position:absolute;left:107.88px;top:496.91px" class="cls_009"><span class="cls_009">“original” when printed from electronic files or records established and maintained in the normal</span></div>
+<div style="position:absolute;left:107.88px;top:507.35px" class="cls_009"><span class="cls_009">course of business.</span></div>
+<div style="position:absolute;left:89.88px;top:517.80px" class="cls_009"><span class="cls_009">9.</span></div>
+<div style="position:absolute;left:107.88px;top:517.80px" class="cls_032"><span class="cls_032">Course of Dealing</span><span class="cls_009"> - The conduct of the Parties pursuant to these procure-to-pay terms, including the</span></div>
+<div style="position:absolute;left:107.88px;top:528.30px" class="cls_009"><span class="cls_009">use of Signed Documents properly transmitted pursuant to these terms, shall, for all purposes,</span></div>
+<div style="position:absolute;left:107.88px;top:538.80px" class="cls_009"><span class="cls_009">evidence a course of dealing and a course of performance accepted by the Parties in furtherance of</span></div>
+<div style="position:absolute;left:107.88px;top:549.29px" class="cls_009"><span class="cls_009">these procure-to-pay terms, any Transaction.</span></div>
+<div style="position:absolute;left:89.88px;top:559.80px" class="cls_009"><span class="cls_009">10.</span><span class="cls_011"> </span><span class="cls_032">Validity</span><span class="cls_009"> - Anthem and Supplier agree not to contest the validity or enforceability of Signed Documents</span></div>
+<div style="position:absolute;left:107.88px;top:570.30px" class="cls_009"><span class="cls_009">under the provisions of any applicable law relating to whether or not certain agreements are to be in</span></div>
+<div style="position:absolute;left:107.88px;top:580.80px" class="cls_009"><span class="cls_009">writing or signed by the Party to be bound thereby. Signed Documents, if introduced on paper in any</span></div>
+<div style="position:absolute;left:107.88px;top:591.29px" class="cls_009"><span class="cls_009">judicial, arbitration, mediation or administrative proceeding, shall be valid to the same extent and under</span></div>
+<div style="position:absolute;left:107.88px;top:601.79px" class="cls_009"><span class="cls_009">the same conditions as other business records originated and maintained in documentary form. Neither</span></div>
+<div style="position:absolute;left:107.88px;top:612.30px" class="cls_009"><span class="cls_009">Party shall contest the admissibility of copies of Signed Documents under either, the business records</span></div>
+<div style="position:absolute;left:107.88px;top:622.80px" class="cls_009"><span class="cls_009">exception to the hearsay rule, or the best evidence rule on the basis that the Signed Documents were</span></div>
+<div style="position:absolute;left:107.88px;top:633.29px" class="cls_009"><span class="cls_009">not originated or maintained in documentary form or on any other basis.</span></div>
+<div style="position:absolute;left:71.88px;top:723.42px" class="cls_002"><span class="cls_002">Page </span><span class="cls_003">6</span><span class="cls_002"> of </span><span class="cls_003">9</span></div>
+<div style="position:absolute;left:71.88px;top:730.14px" class="cls_002"><span class="cls_002">Last Revised:  02/10/2016</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:4812px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="0b1cc12c-354b-11eb-8b25-0cc47a792c0a_id_0b1cc12c-354b-11eb-8b25-0cc47a792c0a_files/background7.jpg" width=612 height=792></div>
+<div style="position:absolute;left:71.88px;top:69.36px" class="cls_008"><span class="cls_008">Supplier Reimbursable Expense Guidelines</span></div>
+<div style="position:absolute;left:71.88px;top:95.22px" class="cls_009"><span class="cls_009">Company recommends Suppliers establish behaviors associated with travel expenditures which are consistent</span></div>
+<div style="position:absolute;left:71.88px;top:105.72px" class="cls_009"><span class="cls_009">with best business practices and Anthem’s Supplier Reimbursable Expense Guidelines and </span><A HREF="http://www.antheminc.com/prodcontrib/groups/wellpoint/documents/wlp_assets/pw_e240212.pdf">Travel Policy</A> </span></div>
+<div style="position:absolute;left:71.88px;top:116.16px" class="cls_030"><span class="cls_030">Guidelines</span><span class="cls_009">.</span></div>
+<div style="position:absolute;left:93.48px;top:140.70px" class="cls_009"><span class="cls_009">1.</span><span class="cls_011"> </span><span class="cls_013">  General</span></div>
+<div style="position:absolute;left:130.37px;top:163.38px" class="cls_010"><span class="cls_010">•</span><span class="cls_011"> </span><span class="cls_009">  When practical to do so, Supplier shall book all travel for purposes of the Agreement through</span></div>
+<div style="position:absolute;left:143.88px;top:173.82px" class="cls_009"><span class="cls_009">Company’s travel service. Arrangements can be made for air fare, hotel and rental cars.</span></div>
+<div style="position:absolute;left:143.88px;top:184.25px" class="cls_009"><span class="cls_009">Supplier should communicate to Company’s travel service that the travel is on behalf of</span></div>
+<div style="position:absolute;left:143.88px;top:194.69px" class="cls_009"><span class="cls_009">Company and that any applicable discounts available to Company should be obtained.</span></div>
+<div style="position:absolute;left:143.88px;top:205.19px" class="cls_009"><span class="cls_009">Supplier shall provide to the travel service the name and telephone number of the</span></div>
+<div style="position:absolute;left:143.88px;top:215.62px" class="cls_009"><span class="cls_009">Procurement Representative assigned to Supplier by Company. Any airline ticket, car rental</span></div>
+<div style="position:absolute;left:143.88px;top:226.06px" class="cls_009"><span class="cls_009">and hotel charges should be paid directly by Supplier, with available discounts applied.</span></div>
+<div style="position:absolute;left:143.88px;top:236.50px" class="cls_009"><span class="cls_009">Company’s travel service telephone number is: (888) FLIWELL or (888) 354-9355 applicable</span></div>
+<div style="position:absolute;left:143.88px;top:246.94px" class="cls_009"><span class="cls_009">discounts available to Company should be obtained. Supplier shall provide to the travel</span></div>
+<div style="position:absolute;left:143.88px;top:257.37px" class="cls_009"><span class="cls_009">service the name and telephone number of the Procurement Representative assigned to</span></div>
+<div style="position:absolute;left:143.88px;top:267.87px" class="cls_009"><span class="cls_009">Supplier by Company.</span></div>
+<div style="position:absolute;left:130.39px;top:278.31px" class="cls_010"><span class="cls_010">•</span><span class="cls_011"> </span><span class="cls_009">  For purposes of reimbursement hereunder, Supplier shall submit original receipts for all</span></div>
+<div style="position:absolute;left:143.89px;top:288.74px" class="cls_009"><span class="cls_009">reimbursable expenses to Company whenever possible. Supplier must submit original</span></div>
+<div style="position:absolute;left:143.89px;top:299.18px" class="cls_009"><span class="cls_009">receipts to receive reimbursement of air travel expenses.</span></div>
+<div style="position:absolute;left:93.50px;top:323.78px" class="cls_009"><span class="cls_009">2. </span><span class="cls_013">Air Travel</span></div>
+<div style="position:absolute;left:121.58px;top:348.08px" class="cls_010"><span class="cls_010">•</span><span class="cls_011"> </span><span class="cls_009">All personnel of Supplier (“Travelers”) will fly coach class. Original airline receipts are required for</span></div>
+<div style="position:absolute;left:129.50px;top:358.39px" class="cls_009"><span class="cls_009">reimbursement in all cases.</span></div>
+<div style="position:absolute;left:93.68px;top:382.63px" class="cls_009"><span class="cls_009">3. </span><span class="cls_013">Hotels</span></div>
+<div style="position:absolute;left:121.41px;top:407.05px" class="cls_010"><span class="cls_010">•</span><span class="cls_011"> </span><span class="cls_009">Hotel accommodations shall be booked for all Travelers by Company’s travel service. Hotels will</span></div>
+<div style="position:absolute;left:130.41px;top:417.49px" class="cls_009"><span class="cls_009">be selected by Company’s travel service on the basis of rates, locations and availability as</span></div>
+<div style="position:absolute;left:130.41px;top:427.99px" class="cls_009"><span class="cls_009">determined by the travel service from time to time. Requests by Travelers for specific hotels will</span></div>
+<div style="position:absolute;left:130.41px;top:438.42px" class="cls_009"><span class="cls_009">be honored only at the discretion of Company’s travel service and only if the rates of such hotels</span></div>
+<div style="position:absolute;left:130.41px;top:448.86px" class="cls_009"><span class="cls_009">are the same as or lower than those selected by the travel service.</span></div>
+<div style="position:absolute;left:121.43px;top:459.30px" class="cls_010"><span class="cls_010">•</span><span class="cls_011"> </span><span class="cls_009">Lodging expenses shall include the cost of a Traveler’s room plus applicable taxes, but shall not</span></div>
+<div style="position:absolute;left:130.43px;top:469.73px" class="cls_009"><span class="cls_009">include room service, recreation, or any other direct charges to the room. See Section 5 of</span></div>
+<div style="position:absolute;left:130.43px;top:480.17px" class="cls_009"><span class="cls_009">these Guidelines for further discussion of these charges.</span></div>
+<div style="position:absolute;left:93.53px;top:504.65px" class="cls_009"><span class="cls_009">4. </span><span class="cls_013">Automobile Expense</span></div>
+<div style="position:absolute;left:121.43px;top:529.07px" class="cls_010"><span class="cls_010">•</span><span class="cls_011"> </span><span class="cls_009">When arrangements are made through Company’s travel service, rental automobiles will be</span></div>
+<div style="position:absolute;left:130.43px;top:539.56px" class="cls_009"><span class="cls_009">provided by the rental car company selected by the travel service. Rental car charges shall</span></div>
+<div style="position:absolute;left:130.43px;top:550.00px" class="cls_009"><span class="cls_009">be billed directly to each Traveler.</span></div>
+<div style="position:absolute;left:121.43px;top:561.82px" class="cls_010"><span class="cls_010">•</span><span class="cls_011"> </span><span class="cls_009">Reimbursement will cover no more than the cost of a mid-size rental car. Limousine service is</span></div>
+<div style="position:absolute;left:130.45px;top:572.26px" class="cls_009"><span class="cls_009">expressly prohibited, unless authorized in advance in writing by a Procurement Representative.</span></div>
+<div style="position:absolute;left:121.44px;top:582.75px" class="cls_010"><span class="cls_010">•</span><span class="cls_011"> </span><span class="cls_009">Additional insurance coverage, as provided in the rental car agreement, will not be reimbursed.</span></div>
+<div style="position:absolute;left:121.44px;top:593.07px" class="cls_010"><span class="cls_010">•</span><span class="cls_011"> </span><span class="cls_009">Mileage for travel in Supplier’s vehicles or in Travelers’ personal vehicles shall be reimbursed at</span></div>
+<div style="position:absolute;left:130.45px;top:603.39px" class="cls_009"><span class="cls_009">the same per-mile rate in effect from time to time for reimbursement of mileage incurred by</span></div>
+<div style="position:absolute;left:130.45px;top:613.76px" class="cls_009"><span class="cls_009">Company’s own employees. Toll-road charges will be reimbursed only if incurred for office-to-</span></div>
+<div style="position:absolute;left:130.46px;top:624.08px" class="cls_009"><span class="cls_009">office travel between Supplier’s offices and Company’s. Mileage and tolls should be supported by</span></div>
+<div style="position:absolute;left:130.46px;top:634.46px" class="cls_009"><span class="cls_009">appropriate, contemporaneous logs of such charges maintained by Travelers.</span></div>
+<div style="position:absolute;left:89.95px;top:659.00px" class="cls_009"><span class="cls_009">5. </span><span class="cls_013">Miscellaneous Travel Expenses</span></div>
+<div style="position:absolute;left:121.44px;top:683.48px" class="cls_010"><span class="cls_010">•</span><span class="cls_011"> </span><span class="cls_009">Original receipts must be submitted for expenses including the following: meals; taxi and hotel</span></div>
+<div style="position:absolute;left:130.45px;top:694.03px" class="cls_009"><span class="cls_009">shuttle fares; parking; and other costs for which receipts can be typically obtained. Expenses such</span></div>
+<div style="position:absolute;left:71.88px;top:723.42px" class="cls_002"><span class="cls_002">Page </span><span class="cls_003">7</span><span class="cls_002"> of </span><span class="cls_003">9</span></div>
+<div style="position:absolute;left:71.88px;top:730.14px" class="cls_002"><span class="cls_002">Last Revised:  02/10/2016</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:5614px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="0b1cc12c-354b-11eb-8b25-0cc47a792c0a_id_0b1cc12c-354b-11eb-8b25-0cc47a792c0a_files/background8.jpg" width=612 height=792></div>
+<div style="position:absolute;left:130.38px;top:70.86px" class="cls_009"><span class="cls_009">as tips (for which receipts are usually are not provided) should be reasonable for the services</span></div>
+<div style="position:absolute;left:130.38px;top:81.42px" class="cls_009"><span class="cls_009">provided and supported by a personal log or other contemporaneous record kept by the Traveler.</span></div>
+<div style="position:absolute;left:121.38px;top:93.17px" class="cls_010"><span class="cls_010">•</span><span class="cls_011"> </span><span class="cls_009">Travelers’ expense reports submitted as documentation for reimbursement are to be signed by</span></div>
+<div style="position:absolute;left:130.39px;top:103.73px" class="cls_009"><span class="cls_009">appropriate management personnel of Supplier and are to include copies of applicable receipts</span></div>
+<div style="position:absolute;left:130.39px;top:114.29px" class="cls_009"><span class="cls_009">as supporting documentation.</span></div>
+<div style="position:absolute;left:121.39px;top:124.84px" class="cls_010"><span class="cls_010">•</span><span class="cls_011"> </span><span class="cls_009">Documentation of each business meal should include the names of all individuals for whom</span></div>
+<div style="position:absolute;left:130.40px;top:135.34px" class="cls_009"><span class="cls_009">the meal was ordered, the date of the meal, the business purpose, the relationships between</span></div>
+<div style="position:absolute;left:130.40px;top:145.90px" class="cls_009"><span class="cls_009">or among the individuals, and a summary of the business discussion.</span></div>
+<div style="position:absolute;left:121.40px;top:156.45px" class="cls_010"><span class="cls_010">•</span><span class="cls_011"> </span><span class="cls_009">A per diem allowance for meals, tips, and incidentals, when agreed to in advance in writing by</span></div>
+<div style="position:absolute;left:130.41px;top:167.01px" class="cls_009"><span class="cls_009">the Procurement Representative, shall be in lieu of any other reimbursement for such expenses</span></div>
+<div style="position:absolute;left:130.41px;top:177.62px" class="cls_009"><span class="cls_009">and shall not exceed the following maximum per Traveler: $ 60.00 per day.</span></div>
+<div style="position:absolute;left:89.91px;top:202.16px" class="cls_009"><span class="cls_009">6. </span><span class="cls_013">Other Expenses</span></div>
+<div style="position:absolute;left:121.41px;top:226.64px" class="cls_010"><span class="cls_010">•</span><span class="cls_011"> </span><span class="cls_009">If incurred by Supplier exclusively for purposes of the Agreement, other costs (such as for</span></div>
+<div style="position:absolute;left:130.41px;top:237.20px" class="cls_009"><span class="cls_009">document reproduction, computer time, air freight, postage telephone, and facsimile) will be</span></div>
+<div style="position:absolute;left:130.41px;top:247.75px" class="cls_009"><span class="cls_009">reimbursed by Company only upon submission of documentation satisfactory to Company. Such</span></div>
+<div style="position:absolute;left:130.41px;top:258.31px" class="cls_009"><span class="cls_009">documentation may include office logs that identify specific costs with specific services</span></div>
+<div style="position:absolute;left:130.41px;top:268.86px" class="cls_009"><span class="cls_009">performed by Supplier under the Agreement.</span></div>
+<div style="position:absolute;left:89.91px;top:293.46px" class="cls_009"><span class="cls_009">7. </span><span class="cls_013">Subcontractors</span></div>
+<div style="position:absolute;left:121.41px;top:317.94px" class="cls_010"><span class="cls_010">•</span><span class="cls_011"> </span><span class="cls_009">If Supplier contracts with a third party (“Subcontractor”) for purposes of performing Supplier’s</span></div>
+<div style="position:absolute;left:130.41px;top:328.50px" class="cls_009"><span class="cls_009">obligations under the Agreement, these Guidelines shall apply to travel expenses incurred by a</span></div>
+<div style="position:absolute;left:130.41px;top:338.99px" class="cls_009"><span class="cls_009">Subcontractor and which Supplier is obligated to reimburse to the Subcontractor. Company shall</span></div>
+<div style="position:absolute;left:130.41px;top:349.55px" class="cls_009"><span class="cls_009">not be responsible to pay Supplier any amount in excess of Supplier’s actual cost of reimbursing a</span></div>
+<div style="position:absolute;left:130.41px;top:360.11px" class="cls_009"><span class="cls_009">Subcontractor, or the maximum amount permitted by these Guidelines, whichever is less. In no</span></div>
+<div style="position:absolute;left:130.41px;top:370.66px" class="cls_009"><span class="cls_009">event shall Company pay Supplier any percentage, fee, administrative charge or other mark-up.</span></div>
+<div style="position:absolute;left:71.88px;top:405.06px" class="cls_008"><span class="cls_008">Anthem Requirements for On-Site Personnel</span></div>
+<div style="position:absolute;left:71.88px;top:426.96px" class="cls_009"><span class="cls_009">The following background checks and on-boarding procedures are required to be performed for all Supplier</span></div>
+<div style="position:absolute;left:71.88px;top:437.16px" class="cls_009"><span class="cls_009">personnel placed on assignment at an Anthem location. Additional types of checks may be required based upon</span></div>
+<div style="position:absolute;left:71.87px;top:447.41px" class="cls_009"><span class="cls_009">the position and/or location and are at the sole discretion of Anthem.</span></div>
+<div style="position:absolute;left:71.86px;top:471.36px" class="cls_013"><span class="cls_013">Background Check Criteria</span></div>
+<div style="position:absolute;left:71.86px;top:481.20px" class="cls_009"><span class="cls_009">Below is a list of specific background check criteria that must be performed and documented prior to the start</span></div>
+<div style="position:absolute;left:71.86px;top:491.04px" class="cls_009"><span class="cls_009">date of all Supplier personnel that will be onsite at an Anthem location—no exceptions will be made.</span></div>
+<div style="position:absolute;left:71.85px;top:516.36px" class="cls_009"><span class="cls_009">Supplier is responsible for obtaining and maintaining documentation substantiating that all items listed have</span></div>
+<div style="position:absolute;left:71.85px;top:528.00px" class="cls_009"><span class="cls_009">been </span><span class="cls_019">performed. Audits may be performed by Anthem to ensure compliance.</span></div>
+<div style="position:absolute;left:71.85px;top:549.12px" class="cls_018"><span class="cls_018">Type of Check</span></div>
+<div style="position:absolute;left:89.86px;top:559.44px" class="cls_024"><span class="cls_024">•</span></div>
+<div style="position:absolute;left:107.86px;top:559.44px" class="cls_019"><span class="cls_019">Social Security Number Verification (Includes Trace)</span></div>
+<div style="position:absolute;left:89.86px;top:569.81px" class="cls_024"><span class="cls_024">•</span></div>
+<div style="position:absolute;left:107.86px;top:569.81px" class="cls_019"><span class="cls_019">Criminal Search - All years reportable by the courts (County Criminal; residence, school, & employment)</span></div>
+<div style="position:absolute;left:107.86px;top:580.13px" class="cls_019"><span class="cls_019">- all counties provided or developed</span></div>
+<div style="position:absolute;left:89.86px;top:590.45px" class="cls_024"><span class="cls_024">•</span></div>
+<div style="position:absolute;left:107.86px;top:590.45px" class="cls_019"><span class="cls_019">National Criminal Database Search (+county criminal if any “hits” obtained from nationwide search)</span></div>
+<div style="position:absolute;left:89.86px;top:600.77px" class="cls_024"><span class="cls_024">•</span></div>
+<div style="position:absolute;left:107.86px;top:600.77px" class="cls_019"><span class="cls_019">10 Panel Non-DOT drug screen required for specified positions</span></div>
+<div style="position:absolute;left:89.87px;top:611.08px" class="cls_024"><span class="cls_024">•</span></div>
+<div style="position:absolute;left:107.87px;top:611.08px" class="cls_019"><span class="cls_019">US Department of Treasury’s Office of Foreign Assets Control (OFAC) Specially Designated National or a</span></div>
+<div style="position:absolute;left:107.87px;top:621.40px" class="cls_019"><span class="cls_019">Blocked Persons</span></div>
+<div style="position:absolute;left:89.87px;top:631.78px" class="cls_024"><span class="cls_024">•</span></div>
+<div style="position:absolute;left:107.87px;top:631.78px" class="cls_019"><span class="cls_019">Employment Verification - last 3 employers or past 10 years, whichever comes first</span></div>
+<div style="position:absolute;left:89.87px;top:642.10px" class="cls_024"><span class="cls_024">•</span></div>
+<div style="position:absolute;left:107.88px;top:642.10px" class="cls_019"><span class="cls_019">Education Verification (highest level obtained post high school)</span></div>
+<div style="position:absolute;left:89.88px;top:652.41px" class="cls_024"><span class="cls_024">•</span></div>
+<div style="position:absolute;left:107.89px;top:652.41px" class="cls_019"><span class="cls_019">Professional License or Certificate Verification (if appropriate)</span></div>
+<div style="position:absolute;left:89.88px;top:662.73px" class="cls_024"><span class="cls_024">•</span></div>
+<div style="position:absolute;left:107.89px;top:662.73px" class="cls_019"><span class="cls_019">OIG List of Excluded Individuals/Entities*</span></div>
+<div style="position:absolute;left:89.88px;top:673.05px" class="cls_024"><span class="cls_024">•</span></div>
+<div style="position:absolute;left:107.89px;top:673.05px" class="cls_019"><span class="cls_019">GSA List of Parties Excluded from Federal Programs (now known as SAM)*</span></div>
+<div style="position:absolute;left:89.88px;top:683.37px" class="cls_024"><span class="cls_024">•</span></div>
+<div style="position:absolute;left:107.89px;top:683.37px" class="cls_019"><span class="cls_019">E-verify Contractor shall comply with the requirements of 48 C.F.R. 52.222-54 and the U.S. Citizenship</span></div>
+<div style="position:absolute;left:107.89px;top:693.75px" class="cls_019"><span class="cls_019">and Immigration Services’ E-Verify Program.</span></div>
+<div style="position:absolute;left:71.88px;top:723.42px" class="cls_002"><span class="cls_002">Page </span><span class="cls_003">8</span><span class="cls_002"> of </span><span class="cls_003">9</span></div>
+<div style="position:absolute;left:71.88px;top:730.14px" class="cls_002"><span class="cls_002">Last Revised:  02/10/2016</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:6416px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="0b1cc12c-354b-11eb-8b25-0cc47a792c0a_id_0b1cc12c-354b-11eb-8b25-0cc47a792c0a_files/background9.jpg" width=612 height=792></div>
+<div style="position:absolute;left:71.88px;top:70.98px" class="cls_026"><span class="cls_026">Links to perform checks of the OIG List of Excluded Individuals/Entities and the GSA List of Parties Excluded from</span></div>
+<div style="position:absolute;left:71.88px;top:81.36px" class="cls_026"><span class="cls_026">Federal Programs (now known as SAM) are as follows:</span></div>
+<div style="position:absolute;left:89.88px;top:101.46px" class="cls_034"><span class="cls_034"> </span><A HREF="http://exclusions.oig.hhs.gov/search.html">http://exclusions.oig.hhs.gov/search.html</A> </div>
+<div style="position:absolute;left:89.88px;top:128.28px" class="cls_034"><span class="cls_034"> </span><A HREF="https://www.sam.gov/portal/public/SAM/">https://www.sam.gov/portal/public/SAM/</A> </div>
+<div style="position:absolute;left:71.88px;top:155.70px" class="cls_009"><span class="cls_009">*Please note that the checks performed of the OIG and GSA lists are to be performed at the time of hire AND</span></div>
+<div style="position:absolute;left:79.50px;top:166.02px" class="cls_009"><span class="cls_009">monthly thereafter for all contractors who support Anthem.</span></div>
+<div style="position:absolute;left:71.88px;top:186.06px" class="cls_013"><span class="cls_013">Required On-boarding Documents</span></div>
+<div style="position:absolute;left:71.89px;top:196.44px" class="cls_009"><span class="cls_009">On-boarding documents are required for all Supplier personnel that will be assigned onsite to an Anthem</span></div>
+<div style="position:absolute;left:71.89px;top:206.76px" class="cls_009"><span class="cls_009">location. Prior to conducting business with Anthem or its affiliates, approved Suppliers are required to review</span></div>
+<div style="position:absolute;left:71.88px;top:217.07px" class="cls_009"><span class="cls_009">and provide copies of executed on-boarding documents. These documents must be retained and be available</span></div>
+<div style="position:absolute;left:71.88px;top:227.39px" class="cls_009"><span class="cls_009">for audit by Anthem.</span></div>
+<div style="position:absolute;left:71.88px;top:723.42px" class="cls_002"><span class="cls_002">Page </span><span class="cls_003">9</span><span class="cls_002"> of </span><span class="cls_003">9</span></div>
+<div style="position:absolute;left:71.88px;top:730.14px" class="cls_002"><span class="cls_002">Last Revised:  02/10/2016</span></div>
+</div>
+
+</body>
+</html>
