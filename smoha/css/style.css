@@ -3702,7 +3702,8 @@ a img.aligncenter { display: block; margin-left: auto; margin-right: auto }
 .scroll-top-arrow i {line-height: 30px;  position: relative;}
 
 .bg-dark-footer{background-color:#141414;}
-.footer-logo {max-height: 28px;}
+/* .footer-logo {max-height: 28px;} */
+.footer-logo {max-height: 80%;}
 
 /* footer input */
 footer input::-webkit-input-placeholder { color: #6f6f6f; text-overflow: ellipsis; font-size: 11px; font-weight: 400; opacity:1;}
