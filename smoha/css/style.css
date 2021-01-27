@@ -37,7 +37,7 @@ Table of contents
 /* ===================================
     Google font
 ====================================== */
-
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900');
 
@@ -45,7 +45,7 @@ Table of contents
     Reset
 ====================================== */
 html { font-size: 15px; }
-body{ font-family: 'Roboto', sans-serif; -webkit-font-smoothing: antialiased;  font-smoothing: antialiased; font-size:14px; color:#6f6f6f; font-weight: 400;line-height: 24px;}
+body{ font-family: 'Cairo', 'Roboto', sans-serif; -webkit-font-smoothing: antialiased;  font-smoothing: antialiased; font-size:14px; color:#6f6f6f; font-weight: 400;line-height: 24px;}
 body, html { height: 100%; -moz-osx-font-smoothing: grayscale;}
 a, a:active, a:focus { color: #6f6f6f; text-decoration: none; }
 a:hover, a:active{color: #0B2471; text-decoration: none;}
@@ -3702,7 +3702,8 @@ a img.aligncenter { display: block; margin-left: auto; margin-right: auto }
 .scroll-top-arrow i {line-height: 30px;  position: relative;}
 
 .bg-dark-footer{background-color:#141414;}
-.footer-logo {max-height: 28px;}
+/* .footer-logo {max-height: 28px;} */
+.footer-logo {max-height: 80%;}
 
 /* footer input */
 footer input::-webkit-input-placeholder { color: #6f6f6f; text-overflow: ellipsis; font-size: 11px; font-weight: 400; opacity:1;}
