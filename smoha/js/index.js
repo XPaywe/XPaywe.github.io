@@ -9,7 +9,7 @@ class Translator {
       this._lang = lang;
     }
 
-    fetch(`/i18n/${this._lang}.json`)
+    fetch(`./i18n/${this._lang}.json`)
       .then((res) => res.json())
       .then((translation) => {
         this.translate(translation);
