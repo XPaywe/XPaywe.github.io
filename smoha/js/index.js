@@ -1,5 +1,3 @@
-// import Translator from "./translator.js";
-
 class Translator {
   constructor() {
     this._lang = "ar";
