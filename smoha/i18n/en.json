@@ -4,24 +4,24 @@
         "header": "THE BLUE IS READY"
     },
     "about": {
-        "about": "About Smoha",
-        "header": "an Egyptian sports club based in Smouha, Alexandria, Egypt. The club is mainly known for its professional football team, which currently plays in the Egyptian Premier League, the highest league in the Egyptian football league system."
+        "about": "عن سموحة",
+        "header": "نادي رياضي مصري مقره سموحة ، الإسكندرية ، مصر. يشتهر النادي بشكل أساسي بفريقه المحترف لكرة القدم ، والذي يلعب حاليًا في الدوري المصري الممتاز ، وهو أعلى دوري في نظام الدوري المصري لكرة القدم."
     },
     "action": {
-        "span": "Memberships",
-        "header": "Now Pay Your Membership Fees Online"
+        "span": "العضويات",
+        "header": "الآن ادفع رسوم العضوية الخاصة بك عبر الإنترنت"
     },
     "contact": {
-        "label1": "Contact Address",
-        "value1": "Nady Somoha Al Ryadi, Ezbet Saad, Sidi Gaber, Alexandria Governorate.",
-        "label2": "Phone number",
-        "phone": "Phone: +20-123-222-000",
-        "fax": "Fax: 1-800-222-002",
+        "label1": "عنوان التواصل",
+        "value1": "نادي سموحة الرياضي ، عزبة سعد ، سيدي جابر ، محافظة الإسكندرية.",
+        "label2": "رقم الهاتف",
+        "phone": "الهاتف: +20-123-222-000",
+        "fax": "فاكس: 1-800-222-002",
         "email": "info@smouhaclub.com"
     },
     "footer": {
         "powered-by": "2021 Smoha is Powered by",
         "xpay": "XPay",
-        "social": "On social networks"
+        "social": "مواقع التواصل الاجتماعي"
     }
 }
