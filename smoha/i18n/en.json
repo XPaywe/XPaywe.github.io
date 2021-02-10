@@ -9,7 +9,8 @@
       },
       "action": {
           "span": "Memberships",
-          "header": "Now Pay Your Membership Fees Online"
+          "header": "Now Pay Your Membership Fees Online",
+          "pay": "PAY"
       },
       "contact": {
           "label1": "Contact Address",
